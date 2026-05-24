@@ -1,0 +1,182 @@
+/*start defaults*/
+*,
+*::before,
+*::after {
+    interpolate-size: allow-keywords;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+a:is(:hover, :focus, :active),
+a:is(:hover, :focus, :active) > * {
+    text-decoration: underline;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+/*html {
+    color-scheme: dark light;
+}*/
+
+body {
+    min-height: 100dvh;
+}
+/*end defaults*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    min-width: max-content;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.main-content {
+    background-color: rgb(230, 230, 230);
+    width: max-content;
+    padding: 10px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    gap: 10px;
+}
+
+.item {
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-name {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-size: larger;
+    font-weight: bold;
+    width: calc(100% - 6px);
+    margin-top: 0;
+}
+
+.item img {
+    width: 150px;
+    height: 200px;
+}
+
+.add-btn {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    width: 70%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.add-btn:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.cart-ico {
+    color: white;
+}
+
+.cart-ico:hover {
+    color: sandybrown;
+}
+
+table,
+tr {
+    width: 80%;
+    border: 1px solid black;
+}
+
+th {
+    text-align: left;
+    border: 1px solid black;
+}
+
+td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.mbtn {
+    background-color: blanchedalmond;
+    text-decoration: none;
+    display: block;
+    width: 30px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+td p {
+    margin: 3px;
+    padding: 5px;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    width: 100%;
+}
+
+.infoMsg {
+    width: 100%;
+    color: green;
+    font-size: 1.3rem;
+    text-align: center;
+}
