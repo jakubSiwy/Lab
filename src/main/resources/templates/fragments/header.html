@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+</head>
+
+<body>
+<header th:fragment="shopHeader">
+        <span class="title">Sklep z klawiaturami</span>
+
+        <a href="/cartView" class="cart-ico">
+                <div>
+                        <span>Koszyk</span>
+                        <span th:if="${session.cart != null}" th:text="'(' + ${session.cart.size()} + ')'"></span>
+                        <span th:unless="${session.cart != null}">(0)</span>
+                        <span>0</span>
+                        <span>zł</span>
+                </div>
+        </a>
+</header>
+</body>
+</html>

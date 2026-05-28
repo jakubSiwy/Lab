@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.siwy</groupId>
-    <artifactId>Lab01</artifactId>
+    <artifactId>Lab</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Lab01</name>
-    <description>Lab01</description>
+    <name>Lab</name>
+    <description>Lab</description>
     <url/>
     <licenses>
         <license/>

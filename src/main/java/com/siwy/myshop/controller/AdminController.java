@@ -14,9 +14,10 @@ public class AdminController {
         private final ItemRepository itemRepository;
 
         @Autowired
-        public AdminController(ItemRepository itemRepository) {
+        public AdminController( ItemRepository itemRepository ) {
                 this.itemRepository = itemRepository;
         }
+
         @GetMapping
         public String adminPage() {
                 return "adminview/addItem";
@@ -24,8 +25,7 @@ public class AdminController {
 
         @PostMapping
         private String addItem( Item item ) {
-//                HomeController.items.add( item );
-                itemRepository.save(item);
+                itemRepository.save( item );
                 return "redirect:/";
         }
 }

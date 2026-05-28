@@ -23,7 +23,7 @@ public class Item {
         private BigDecimal price;
         private String imgURL;
 
-        public Item(String name, BigDecimal price, String imgURL) {
+        public Item( String name, BigDecimal price, String imgURL ) {
                 this.name = name;
                 this.price = price;
                 this.imgURL = imgURL;
